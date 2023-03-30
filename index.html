@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JS Timer</title>
+</head>
+<body>
+    <div id="app">
+        <div   id="settings-screen">
+            <div class="container"> 
+
+                <div class="logo">
+                    <img class="img" src="timer.svg" alt="">
+                </div>       
+
+                <input class="input" name="time" id="inputTime" placeholder="Введи минуты" type="text">
+
+                <button id="btnStart" class="press">Start</button>
+
+            </div>
+        </div>
+
+        <!-- Работа таймера -->
+        <div class="display__none" id="timer-screen">
+            <div class="timer-outer"></div>
+            <div class="timer">
+                <p><span id="minutes">0</span> minutes <span id="seconds">0</span> seconds</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
